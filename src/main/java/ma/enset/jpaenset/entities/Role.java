@@ -21,7 +21,7 @@ public class Role {
     private String desc;
     @Column(length = 20,unique = true)
     private String roleName;
-    @ManyToMany(fetch = FetchType.EAGER)
+     @ManyToMany(fetch = FetchType.EAGER)
    // @JoinTable(name="USER_ROLES",)
     @ToString.Exclude
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
